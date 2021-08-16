@@ -22,8 +22,8 @@ dp = Dispatcher(bot)
 ###USE YOUR ROTATING PROXY### NEED HQ PROXIES ELSE WONT WORK UPDATE THIS FILED
 """
 proxy = {
-    "http": "http://tpbrcutm-rotate:zdo9w2xa8p3s.webshare.io:80/",
-    "https": "http://tpbrcutm-rotate:zdo9w2xa8p3s.webshare.io:80/",
+    "http": "https://zenum.io/proxylist?format=txt&start=10000&q=400000",
+    "https": "https://zenum.io/proxylist?format=txt&start=10000&q=40000",
 } 
 """
 session = requests.session()
