@@ -76,22 +76,22 @@ async def tv(message: types.Message):
     if "Access denied" in r.text:
         await message.reply(f"""
 <b>COMBO</b>➟ <code>{ac}</code>
+<b>BOTBY</b>➟ PATCHLOGGER
 <b>STATUS</b>➟ ❌WRONG DETAILS
 TOOK ➟ <b>{toc - tic:0.4f}</b>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>
 """)
-<b>BOTBY</b>➟ @PATCHLOGGER
     elif "PASS" in r.text:
         res = r.json()
         await message.reply(f"""
 <b>COMBO</b>➟ <code>{ac}</code>
 <b>STATUS</b>➟ ✅VALID
+<b>BOTBY</b>➟ PATCHLOGGER
 <b>LEVEL</b>➟ {res['details']['bearType']}
 <b>VALIDTILL</b>➟ {res['details']['fullVersionUntil']}
 TOOK ➟ <b>{toc - tic:0.4f}</b>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>
 """)
-<b>BOTBY</b>➟ @PATCHLOGGER
     else:
         await message.reply("Error❌: REQ failed")
         
@@ -194,30 +194,30 @@ async def ch(message: types.Message):
         await message.reply(f"""
 ✅<b>CC</b>➟ <code>{cc}</code>
 <b>STATUS</b>➟ #ApprovedCCN
+<b>BOTBY</b>➟ PATCHLOGGER
 <b>MSG</b>➟ {msg}
 <b>TOOK:</b> <code>{toc - tic:0.4f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>
 """)
-<b>BOTBY</b>➟ @PATCHLOGGER
     elif "Unrecognized request URL" in rx.text:
         await message.reply("[UPDATE] PROXIES ERROR")
     elif rx.status_code is 200:
         await message.reply(f"""
 ❌<b>CC</b>➟ <code>{cc}</code>
 <b>STATUS</b>➟ #ApprovedCVV
+<b>BOTBY</b>➟ PATCHLOGGER
 <b>TOOK:</b> <code>{toc - tic:0.4f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>
 """)
-<b>BOTBY</b>➟ @PATCHLOGGER
     else:
         await message.reply(f"""
 ❌<b>CC</b>➟ <code>{cc}</code>
 <b>STATUS</b>➟ Declined
+<b>BOTBY</b>➟ PATCHLOGGER
 <b>MSG</b>➟ {msg}
 <b>TOOK:</b> <code>{toc - tic:0.4f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>
 """)
-<b>BOTBY</b>➟ @PATCHLOGGER
     
     
 if __name__ == '__main__':
